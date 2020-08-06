@@ -1,5 +1,5 @@
 
-var blessed = require('blessed')
+var blessed = require('neo-blessed')
   , contrib = require('../../')
   , screen = blessed.screen()
   , chalk = require('chalk')

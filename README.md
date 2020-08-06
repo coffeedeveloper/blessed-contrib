@@ -39,7 +39,7 @@ Works on Linux, OS X and Windows. For Windows follow the [pre requisites](http:/
 You can use any of the default widgets of [blessed](https://github.com/chjj/blessed) (texts, lists and etc) or the widgets added in blessed-contrib (described below). A [layout](#layouts) is optional but useful for dashboards. The widgets in blessed-contrib follow the same usage pattern:
 
 `````javascript
-   var blessed = require('blessed')
+   var blessed = require('neo-blessed')
      , contrib = require('blessed-contrib')
      , screen = blessed.screen()
      , line = contrib.line(
@@ -472,7 +472,7 @@ A carousel layout switches between different views based on time or keyboard act
 One use case is an office dashboard with rotating views:
 
 `````javascript
-    var blessed = require('blessed')
+    var blessed = require('neo-blessed')
       , contrib = require('./')
       , screen = blessed.screen()
 
@@ -540,7 +540,7 @@ One use case is an office dashboard with rotating views:
 **A simple dashboard**
 
 `````javascript
-   var blessed = require('blessed')
+   var blessed = require('neo-blessed')
      , contrib = require('blessed-contrib')
      , screen = blessed.screen()
      , grid = new contrib.grid({rows: 1, cols: 2, screen: screen})
